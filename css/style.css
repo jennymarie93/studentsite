@@ -29,6 +29,8 @@ header {
 header a {
     color: white;
     text-decoration: none;
+    padding: 2em;
+    text-shadow: 1px 1px 5px black;
 }
 
 header a:hover {
@@ -67,7 +69,7 @@ section {
 .hero {
     background-color: indianred ;
     text-align: center;
-    color: whitesmoke;
+    color: white;
     padding: 6em 1em;
 }
 
@@ -76,12 +78,15 @@ section {
     line-height: 1;
     text-transform: uppercase;
     margin: 0 auto;
+    text-shadow: 1px 1px 2px black;
 }
 .hero p {
     max-width: 30em;
     color: white;
+    font-size: 1em;
     margin: 1em auto;
-
+    padding: 1em 1em;
+    /* border: 9px dotted white; */
 }
 
 /* COURSES SECTION */
@@ -200,7 +205,7 @@ dd {
 /* STYLING FOR SUB PAGES */
 .page-sub .hero {
     background-color: rgba(0, 0, 0, 0.1);
-    color: slategray; 
+    color: white; 
 }
 
 /* COURSE WORK SECTION */
@@ -215,10 +220,25 @@ dd {
     margin: 2em;
 }
 
+/* CUSTOM STYLING FOR SPECIFIC PAGES */
+.page-home header {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+}
 
-FOR DEV PURPOSES
+.page-home .hero {
+    background-image:
+  linear-gradient(to bottom, rgba(247, 119, 151, 0.5), rgba(0, 0, 0, 0.5)),
+  url('../img/ART5-1.jpg');
+/* background-image: url("../img/ART5-1.jpg"); */
+background-position: bottom center;
+background-size: cover;
+}
+
+/* FOR DEV PURPOSES
 body * {
     background-color: rgba(0,0,0,.05) !important;
     border: 1px solid rgba(0,0,0,.1) !important;
     color: rgba(0,0,0,.5) !important;
-}
+} */
