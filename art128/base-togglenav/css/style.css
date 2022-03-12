@@ -411,11 +411,13 @@ body.demo::before {
 }
 
 /* SECTIONS */
+
 section {
     padding: 3em 0;
 }
 
 /* HERO */
+
 .hero {
     padding: 6em 4%;
     background-color: rgba(0,0,0,.1);
