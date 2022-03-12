@@ -147,9 +147,9 @@ a {
 }
 
 a:hover {
-    color:rgb(122, 175, 175);
+    color:rgb(103, 148, 148);
     text-decoration: underline;
-    text-decoration-color: rgba(82, 83, 83, 0.8);
+    text-decoration-color: rgba(82, 83, 83, 0.4);
 }
 
 /* HELPER CLASSES */
