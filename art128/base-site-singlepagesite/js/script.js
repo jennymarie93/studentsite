@@ -14,8 +14,13 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     });
 
-// SMOOTH SCROLL
-
-
-
+    // STICKY NAV SCROLL LINKS FOR SINGLE PAGE SITES
+    var stickynavlinks = document.querySelectorAll(".sticky nav a");
+    var stickyheader = document.querySelector(".sticky");
+    var j;
+    for (j = 0; j < stickynavlinks.length; j++) {
+        stickynavlinks[j].onclick = function () {
+            stickyheader.setAttribute('data-navstate', 'closed');
+        };
+    };
 });
