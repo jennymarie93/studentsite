@@ -4,8 +4,8 @@ body { margin: 0; }
 
 /* GLOBAL COLORS */
 body {color: rgba(0,0,0,0.8);}
-a {color: indianred;}
-a:hover {color:rgb(140, 212, 57); }
+a {color: rgba(141, 185, 185, 1)}
+a:hover {color:rgb(103, 148, 148); }
 
 /* GLOBAL TYPOGRAPHY */
 body {
@@ -14,11 +14,17 @@ body {
     line-height: 1.4;
 }
 
+h1 {
+    font-family: epicursive, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 /* SITE STRUCTURE */
 
 header {
-    background-color: indianred;
+    background-color: rgba(141, 185, 185, 1);
     color:thistle;
     padding: 1em;
     display: grid;
@@ -74,22 +80,26 @@ section {
 
 /* HERO SECTION */
 .hero {
-    background-color: indianred ;
+    background-color: rgba(141, 185, 185, 1) ;
     text-align: center;
-    color: white;
+    color: rgb(247, 152, 152);
     padding: 6em 1em;
+
 }
 
 .hero h2 {
     font-size: 6em;
     line-height: 1;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin: 0 auto;
-    text-shadow: 1px 1px 2px black;
+    /* text-shadow: 1px 1px 2px black; */
+    font-family: epicursive, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .hero p {
     max-width: 30em;
-    color: white;
+    color: rgba(141, 185, 185, 1);
     font-size: 1.5em;
     margin: 1em auto;
     padding: 1em 1em;
@@ -235,12 +245,12 @@ dd {
 }
 
 .page-home .hero {
-    background-image:
-  linear-gradient(to bottom, rgba(211, 146, 146, 0.678), rgba(56, 25, 25, 0.5), whitesmoke),
-  url('../img/ART6.jpg');
+    background-image: url('../img/pinekitties.jpg');
 /* background-image: url("../img/ART5-1.jpg"); */
-background-position: bottom center;
+/* background-position: bottom center; */
 background-size: cover;
+background-size: 140%;
+background-position: center;
 }
 
 /* FOR DEV PURPOSES
