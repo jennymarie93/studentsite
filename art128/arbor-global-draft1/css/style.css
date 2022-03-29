@@ -613,6 +613,7 @@ form textarea {
 }
 
 form label {
+    color: white;
     margin-top: 1em;
     margin-bottom: .25em;
 }
@@ -621,13 +622,13 @@ form input[type="text"],
 form textarea {
     border: 1px solid #ccc;
     padding: 0.5em;
-    color: rgb(122, 172, 172);
+    color: rgba(187, 164, 101);
 }
 
 form textarea {
     min-height: 10em;
     line-height: 1.5;
-    caret-color: rgb(122, 172, 172);
+    caret-color: rgba(187, 164, 101);
 }
 
 form input[type="submit"] {
@@ -657,12 +658,23 @@ form input[type="submit"] {
 }
 
 #about {
-    background:rgba(0, 0, 0, .035);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#services {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: white;
+}
+
+#team {
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 #contact {
-    background:rgba(0, 0, 0, .1);
+    background-color: rgba(51, 51, 51, 0.9);
+    color: white;
 }
+
 
 /* STICKY header - works with a class="sticky" on .site-header */
 
@@ -689,6 +701,7 @@ form input[type="submit"] {
       /* border: 1px solid black; */
       text-align: center;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
   }
 
   .service-menu {
@@ -697,7 +710,12 @@ form input[type="submit"] {
     margin-left: 0;
     padding-left: 0;
     text-align: center;
+
 }
+
+ .service-title {
+     color: rgba(0, 0, 0, .7);
+ }
 
 .dropdown {
     position: relative;
@@ -725,14 +743,6 @@ form input[type="submit"] {
     min-width: 600px;
     background-color: rgba(224, 223, 223);
   }
-
-  .light {
-      background-color: rgb(255, 255, 255, .9);
-  }
-  
-  .dark {
-    background-color: rgba(51, 51, 51, 0.9);
-}
 
   .dropdown:hover .dropdown-content {
     display: block;
