@@ -179,8 +179,8 @@ button,
 form input[type="submit"] {
     font-size: inherit;
     line-height: 1;
-    background-color: rgba(175, 215, 215, 1);
-    border: 1px solid rgba(175, 215, 215, 1);
+    background-color: rgba(187, 164, 101);
+    border: 1px solid rgba(187, 164, 101);
     color: rgba(255,255,255,1);
     padding: 1em;
     display: inline-block;
@@ -194,8 +194,8 @@ button:hover,
 form input[type="submit"]:hover {
     font-size: inherit;
     line-height: 1;
-    background-color:  rgba(141, 185, 185, 1);
-    border-color: rgba(141, 185, 185, 1);
+    background-color:  rgb(161, 142, 87);
+    border-color: rgb(161, 142, 87);
     color: rgba(255,255,255,1);
     text-decoration: none;
 }
@@ -386,7 +386,7 @@ body.demo::before {
 
 .site-header a:hover,
 .site-footer a:hover {
-    color: rgba(141, 185, 185, 1);
+    color: rgba(187, 164, 101);
     text-decoration: none;
     cursor: default;
 }
@@ -491,7 +491,7 @@ section {
         text-align: center;
     }
     .toggle-nav .site-nav a:hover {
-        background-color: rgba(175, 215, 215, 1);
+        background-color:  rgba(187, 164, 101);
         color:white;
     }
     .toggle-nav[data-navstate="closed"] ul {
@@ -587,9 +587,9 @@ article p:first-of-type {
 }
 
 article p:first-of-type:first-letter {
-    font-size: 3em;
+    font-size: 1.5em;
     line-height: 1em;
-    background: rgb(141, 185, 185, 1);
+    background:  rgba(187, 164, 101);
     color: #fff;
     padding: .2em .4em;
     margin-right: .3em;
