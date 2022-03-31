@@ -31,7 +31,7 @@
 /* TYPOGRAPHY */
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: davis-sans, Helvetica, Arial, sans-serif;
     font-size: 87.5%; 
     /* 14px = 1em */
     color: rgba(0,0,0,.8);
@@ -48,20 +48,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 3em; 
+    font-size: 3em;
     /* 48px: 48/16 = 3em */
+    font-weight: 300; 
     line-height: 1;
 }
 
 h2 {
     font-size: 2.25em; 
     /* 36px: 36/16 = 2.25em */
+    font-weight: 300; 
     line-height: 1.1;
 }
 
 h3 {
     font-size: 1.5em; 
     /* 24px: 24/16 = 1.5em */
+    font-weight: 300; 
     line-height: 1.2;
 }
 
@@ -100,6 +103,7 @@ h6 {
 /* PARAGRAPHS */
 
 p {
+    font-family: davis-sans, Arial, Helvetica, sans-serif;
     margin: .5em 0;
     max-width: 38em;
 }
@@ -223,10 +227,10 @@ form input[type="submit"]:hover {
 
 body { 
     margin: 0;
-    /* background-image:url(../img/website_styletile2_background.jpg);
+    background-image:url(../img/website_styletile2_background.jpg);
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 125%; */
+    background-size: 125%;
 }
 
 /* CONTAINER */
@@ -391,6 +395,10 @@ body.demo::before {
     cursor: default;
 }
 
+.site-footer {
+    background-color: rgb(255, 255, 255, .8);
+}
+
 /* LOGO AREA */
 
 .site-id h1 {
@@ -528,6 +536,7 @@ section {
 /* SUBPAGES */
 
 article {
+    font-family: davis-sans; Arial, Helvetica, sans-serif;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -701,7 +710,6 @@ form input[type="submit"] {
       /* border: 1px solid black; */
       text-align: center;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-
   }
 
   .service-menu {
@@ -710,11 +718,13 @@ form input[type="submit"] {
     margin-left: 0;
     padding-left: 0;
     text-align: center;
-
 }
 
  .service-title {
      color: rgba(0, 0, 0, .7);
+     font-family: fairplex-wide, serif;
+     font-weight: 400;
+     font-style: normal;
  }
 
 .dropdown {
