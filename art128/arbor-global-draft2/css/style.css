@@ -673,6 +673,12 @@ form input[type="submit"] {
 #services {
     background-color: rgba(51, 51, 51, 0.9);
     color: white;
+    text-decoration-color: rgb(255, 255, 255, .8);
+}
+
+.details {
+    color: black;
+    border: 1px solid red;
 }
 
 #team {
@@ -751,9 +757,13 @@ form input[type="submit"] {
 
   .about {
     min-width: 600px;
-    background-color: rgba(224, 223, 223);
+    background-color: rgb(255, 255, 255);
   }
 
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+
+  details {
+      color: rgba(0, 0, 0, .7)
   }
