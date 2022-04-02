@@ -4,14 +4,18 @@ body { margin: 0; }
 
 /* GLOBAL COLORS */
 body {color: rgba(0,0,0,0.8);}
-a {color: rgba(141, 185, 185, 1)}
-a:hover {color:rgb(103, 148, 148); }
+a {color: rgb(255, 255, 255)}
+a:hover {color:rgb(181, 255, 255); }
 
 /* GLOBAL TYPOGRAPHY */
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: new-order, Helvetica, Arial, sans-serif;
     font-size: 88.75%; /* 14px */
     line-height: 1.4;
+    text-decoration: none;
+    font-weight: 300;
+    font-style: normal;
+    text-shadow: 1px 1px rgba(0,0,0,0.1);
 }
 
 h1 {
@@ -24,7 +28,7 @@ h1 {
 /* SITE STRUCTURE */
 
 header {
-    background-color: rgba(141, 185, 185, 1);
+    background-color: rgba(38, 44, 44, 0.462);
     color:thistle;
     padding: 1em;
     display: grid;
@@ -70,8 +74,15 @@ header a:hover {
 }
 
 /* MAIN */
+body {
+    background-image: url(../img/Brick.gif);
+    background-position: top center;
+    background-size: cover;
+}
+
 main {
-    background: whitesmoke;
+    background: transparent;
+    
 }
 
 section {
@@ -80,9 +91,9 @@ section {
 
 /* HERO SECTION */
 .hero {
-    background-color: rgba(141, 185, 185, 1) ;
+    background-color: rgba(141, 185, 185, 0) ;
     text-align: center;
-    color: rgb(247, 152, 152);
+    color: rgb(245, 239, 239);
     padding: 6em 1em;
 
 }
@@ -96,10 +107,24 @@ section {
     font-family: epicursive, sans-serif;
     font-weight: 400;
     font-style: normal;
+    animation: glow 2s ease-in-out infinite alternate;
 }
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 32px #27e6df, 0 0 35px #27e6df, 0 0 45px #27e6df, 0 0 55px #27e6df, 0 0 65px #27e6df;
+      }
+      to {
+        text-shadow: 0 0 5px #fff, 0 0 15px #daf0a1, 0 0 25px #daf0a1, 0 0 35px #daf0a1, 0 0 45px #daf0a1, 0 0 55px #daf0a1, 0 0 65px #daf0a1;
+      }
+}
+
 .hero p {
+    font-family: new-order, sans-serif;
+    font-weight: 300;
+    font-style: normal;
     max-width: 30em;
-    color: rgba(141, 185, 185, 1);
+    color: rgb(255, 255, 255);
     font-size: 1.5em;
     margin: 1em auto;
     padding: 1em 1em;
@@ -111,24 +136,45 @@ section {
     padding: 6em 1em;
     display: grid;
     justify-content: center;
+    background-image: url(../img/Brick.gif);
+    background-position: top center;
+    background-size: cover;
+    /* background-color: rgba(102, 102, 101, 0.613); */
 }
 
 .courses ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    text-decoration: dotted;
+    font-family: new-order, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5em;
 }
 
 .courses h3 {
-    color: slategray;
+    color: white;
+    font-family: epicursive, sans-serif;
+    font-size: 2.5em;
+    font-weight: 400;
+    font-style: normal;
     text-align: center;
+    animation: glow 3s ease-in-out infinite alternate;
 }
 
 
 /* FOOTER */
 footer {
     border-top: 1px solid lightsteelblue;
+    font-family: new-order, sans-serif;
+    font-weight: 300;
+    font-style: normal;
     padding: 1em;
+    color: white;
+    text-align: center;
+    background-color: #3535327b;
+    animation: glow2 3s ease-out infinite alternate;
 }
 
 /* LAYOUT */
@@ -160,8 +206,8 @@ aside {
 
 /* SUB PAGES */
 .page-sub .hero {
-    background-color:rgba(0, 0, 0, 0.1);
-    color: rgba(0, 0, 0, 0.8);
+    background-color:transparent;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 /* COURSE PAGES WITH MULTIPLE PROJECT LISTS */
@@ -221,7 +267,7 @@ dd {
 
 /* STYLING FOR SUB PAGES */
 .page-sub .hero {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: transparent;
     color: white; 
 }
 
@@ -231,10 +277,33 @@ dd {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    list-style: none;
+}
+
+.coursework h3 {
+    font-family: epicursive, sans-serif;
+    font-size: 2.5em;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    animation: glow2 3s ease-out infinite alternate;
+}
+
+@-webkit-keyframes glow2 {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 7px #fff, 0 0 10px #e1e1e1, 0 0 13px #e1e1e1, 0 0 16px #e1e1e1, 0 0 19px #e1e1e1, 0 0 21px #e1e1e1;
+      }
+      to {
+        text-shadow: 0 0 5px #fff, 0 0 8px #c1c1bfcc, 0 0 14px #c1c1bfcc, 0 0 18px #c1c1bfcc, 0 0 22px #c1c1bfcc, 0 0 26px #c1c1bfcc, 0 0 28px #c1c1bfcc;
+      }
 }
 
 .project {
     margin: 2em;
+}
+
+.project ul {
+    list-style-type: decimal;
 }
 
 /* CUSTOM STYLING FOR SPECIFIC PAGES */
@@ -245,11 +314,9 @@ dd {
 }
 
 .page-home .hero {
-    background-image: url('../img/pinekitties.jpg');
-/* background-image: url("../img/ART5-1.jpg"); */
-/* background-position: bottom center; */
+background-image: url('../img/pinekitties.gif');
 background-size: cover;
-background-size: 140%;
+background-size: 100%;
 background-position: center;
 }
 
