@@ -114,7 +114,7 @@ section {
     animation: glow 2s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes glow {
+@keyframes glow {
     from {
         text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 32px #27e6df, 0 0 35px #27e6df, 0 0 45px #27e6df, 0 0 55px #27e6df, 0 0 65px #27e6df;
       }
@@ -297,7 +297,7 @@ dd {
     animation: glow2 3s ease-out infinite alternate;
 }
 
-@-webkit-keyframes glow2 {
+@keyframes glow2 {
     from {
         text-shadow: 0 0 5px #fff, 0 0 7px #fff, 0 0 10px #e1e1e1, 0 0 13px #e1e1e1, 0 0 16px #e1e1e1, 0 0 19px #e1e1e1, 0 0 21px #e1e1e1;
       }
