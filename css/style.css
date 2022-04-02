@@ -79,13 +79,13 @@ header a:hover {
 
 /* MAIN */
 body {
-    background-image: url(../img/Brick.gif);
+    background-image: url(../img/brick2.jpg);
     background-position: top center;
     background-size: 100%;
 }
 
 main {
-    background: rgba(7, 80, 88, 0.517);
+    background: transparent;
     
 }
 
@@ -175,7 +175,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
-    background: rgba(7, 80, 88, 0.517);
+    background: transparent;
     animation: glow2 3s ease-out infinite alternate;
 }
 
