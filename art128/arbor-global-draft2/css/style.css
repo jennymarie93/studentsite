@@ -367,8 +367,10 @@ body.demo::before {
 
 /* SITE HEADER */
 .site-header {
-    padding: 1em 0;
+    margin-top: .75em;
+    padding: .1em 0 .1 0;
     background: rgba(255,255,255,1);
+    box-shadow: 5px 0 5px 0 rgba(0, 0, 0, .5);
 }
 
 
@@ -406,6 +408,7 @@ body.demo::before {
     margin: 0;
     padding-top: .55em;
     text-align: center;
+    letter-spacing: 5px;
 }
 
 /* SITE NAV */
@@ -419,7 +422,12 @@ body.demo::before {
 
 .site-nav a {
     display: block;
-    padding: 1em;
+    padding: .75em;
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-family: davis sans, Helvetica, Arial, Helvetica, sans-serif;
+    font-weight: 300;
 }
 
 .site-nav .menu-button {
@@ -443,12 +451,16 @@ section {
     max-width: 600px;
     text-align: center;
     align-content: center;
-    margin: 10em auto 10em auto;
+    margin: 2em auto 2em auto;
     border-radius: 50%;
 }
 
+.hero h1 {
+    letter-spacing: 5px;
+}
+
 .hero h1, p {
-    max-width: 500px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -655,7 +667,10 @@ form input[type="submit"] {
 
 .section-title {
     text-align: center;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 2.5em;
 }
 
 .section-title::after {
@@ -663,7 +678,7 @@ form input[type="submit"] {
     display: block;
     width: 100px;
     margin: 0.35em auto;
-    border: .75px solid rgba(0, 0, 0, .2)
+    border: .5px solid rgb(132, 108, 66)
 }
 
 #about {
@@ -676,9 +691,12 @@ form input[type="submit"] {
     text-decoration-color: rgb(255, 255, 255, .8);
 }
 
-.details {
+details {
+    box-sizing: border-box;
     color: black;
-    border: 1px solid red;
+    border-top: 1px solid rgb(60, 60, 60, .8);
+    border-bottom: 1px solid rgb(60, 60, 60, .8);
+    background-color: white;
 }
 
 #team {
