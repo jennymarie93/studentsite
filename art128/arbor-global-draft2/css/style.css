@@ -245,25 +245,12 @@ body {
 
 @media (min-width: 768px) {
 /* TABLET-SIZED STYLING GOES HERE */
-    .hero {
-        min-width: 500px;
-        min-height: 500px;
-        border: 1px solid red;
-    }
-    .hero h1 {
-        /* font-size: 800%; */
-        color: red;
-    }
 }
 
 @media (min-width: 1050px) {
     body {
         font-size: 100%; /* 16px */ 
       }
-    .hero {
-        min-width: 600px;
-        min-height: 600px;
-    }
 }
 
 @media (min-width: 1250px) {
@@ -272,10 +259,6 @@ body {
       }
     .container {
         max-width: 1200px;
-    }
-    .hero {
-        min-width: 800px;
-        min-height: 800px;
     }
 }
 
@@ -374,11 +357,11 @@ body.demo::before {
 }
 
 /* FOR DEMO PURPOSES ONLY */
-.demo .column {
+/* .demo .column {
     background: rgba(0, 0, 0, .2);
     padding: 1em;
     text-align: center;
-    }
+    } */
 
 /* SITE STRUCTURE */
 
@@ -460,51 +443,34 @@ section {
 /* HERO */
 
 .hero {
-    padding: 11em 1em;
-    /* margin-top: 10em;
-    margin-bottom: 5em; */
+    padding: 1em;
     text-align: center;
     background-color: rgba(187, 164, 101, 0.9);
-    width: 400px;
-    height: 400px;
+    width: 50vw;
+    height: 50vw;
     margin: 2em auto 2em auto;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero h1 {
     letter-spacing: 5px;
     font-size: 2.75em;
-}
-
-.hero h1, p {
-    /* max-width: 600px; */
-    margin-left: 0;
-    margin-right: 0;
-    line-height: .5;
+    font-size: 5vw;
+    font-size: clamp(1.5em,5vw,5vw);
 }
 
 .hero p {
-    font-size: .8em;
-}
-
-.hero.full-width {
-    margin-top: 0;
+    /* max-width: 600px; */
     margin-left: 0;
-    background-color: rgb(141, 185, 185, .4);
-}
-
-.hero.full-width h1 {
-    color: white;
-    font-size: 4em;
-    margin-bottom: 0;
-}
-
-.hero.full-width p {
-    color: rgba(0, 0, 0, 0.459);
+    margin-right: 0;
 }
 
 .hero p {
     max-width: 400px;
+    font-size:.8em;
 }
 
 /* TOGGLE NAV */
@@ -570,8 +536,8 @@ section {
 /* SUBPAGES */
 
 article {
-    font-family: davis-sans; Arial, Helvetica, sans-serif;
-    max-width: 600px;
+    font-family: davis-sans, Arial, Helvetica, sans-serif;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -587,14 +553,17 @@ article .date {
 }
 
 article h2.subhead {
-    font-size: 1.5em;
+    font-size: 1.45em;
     line-height: 1.2;
+    text-align: center;
+    margin-bottom: 0;
+
 }
 
 article .subhead {
     font-weight: normal;
     opacity: .75;
-    max-width: 500px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     /* border: 1px solid red; */
@@ -716,9 +685,11 @@ form input[type="submit"] {
 details {
     box-sizing: border-box;
     color: black;
-    border-top: 1px solid rgb(60, 60, 60, .8);
+    /* border-top: 1px solid rgb(60, 60, 60, .8); */
     border-bottom: 1px solid rgb(60, 60, 60, .8);
     background-color: white;
+    margin-top: .85em;
+    padding-bottom: .85em;
 }
 
 #team {
@@ -756,14 +727,19 @@ details {
       /* border: 1px solid black; */
       text-align: center;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      height: 400px;
   }
 
   .service-menu {
     list-style: none;
     background-color: rgba(255, 255, 255, 0.8);
-    margin-left: 0;
-    padding-left: 0;
+    /* margin-left: 0; */
+    padding: 1em;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
  .service-title {
@@ -774,8 +750,10 @@ details {
  }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+    padding: 1em;
+    display: flex;
+    align-content: center;
+    justify-content: center;
     /* border: 1px solid red; */
     margin-bottom: 1em;
     font-weight: bold;
@@ -804,6 +782,29 @@ details {
     display: block;
   }
 
-  details {
-      color: rgba(0, 0, 0, .7)
+   summary {
+      color: rgba(0, 0, 0, 0.7);
+      line-height: 1;
+      /* font-size: .75em; */
+      display: flex;
+      align-items: left;
+      align-content: center;
+      text-align: left;
   }
+
+   .summary-container {
+       /* height: 100px; */
+       width: 300px;
+   }
+
+  /* FOR DEV PURPOSES ONLY */
+/* body, *, *:after, *:before {
+    background: none !important;
+    background-color: rgba(0,0,0,.05) !important;
+    border: 1px solid rgba(0,0,0,.1) !important; */
+    /* color: rgba(0,0,0,0) !important;
+  }
+
+img, svg, canvas, video {
+    filter: contrast(0%);
+} */
