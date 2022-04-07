@@ -685,7 +685,7 @@ details {
     box-sizing: border-box;
     color: black;
     /* border-top: 1px solid rgb(60, 60, 60, .8); */
-    border-bottom: 1px solid rgb(60, 60, 60, .8);
+    border-bottom: 1px solid rgb(214, 185, 127, .8);
     /* background-color: white; */
     margin-top: .85em;
     padding-bottom: .85em;
@@ -785,7 +785,7 @@ details {
     display: block;
   }
 
-   summary {
+summary {
       color: rgba(0, 0, 0, 0.7);
       line-height: 1;
       text-align: left;
@@ -796,6 +796,15 @@ details {
       padding: 1em 3em 1em 1em;
       position: relative;
   }
+
+summary img {
+    border: 1px solid red;
+    display: inline-block;
+    /* padding: 1em; */
+    /* width: 3em;
+    width: 5vw;
+    width: clamp(3em,5vw,5vw); */
+}
 
 summary::before {
     position: absolute;
