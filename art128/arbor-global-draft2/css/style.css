@@ -460,17 +460,16 @@ section {
     font-size: 2.75em;
     font-size: 5vw;
     font-size: clamp(1.5em,5vw,5vw);
+    margin-bottom: 0;
 }
 
 .hero p {
     /* max-width: 600px; */
+    font-size: .5em;
+    font-size: 1.5vw;
+    font-size: clamp(.5em,1.5vw,1.5vw);
     margin-left: 0;
     margin-right: 0;
-}
-
-.hero p {
-    max-width: 400px;
-    font-size:.8em;
 }
 
 /* TOGGLE NAV */
@@ -687,9 +686,13 @@ details {
     color: black;
     /* border-top: 1px solid rgb(60, 60, 60, .8); */
     border-bottom: 1px solid rgb(60, 60, 60, .8);
-    background-color: white;
+    /* background-color: white; */
     margin-top: .85em;
     padding-bottom: .85em;
+}
+
+.service-menu details {
+    background-color: rgb(255, 255, 255);
 }
 
 #team {
@@ -736,7 +739,7 @@ details {
     /* margin-left: 0; */
     padding: 1em;
     text-align: center;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -785,24 +788,40 @@ details {
    summary {
       color: rgba(0, 0, 0, 0.7);
       line-height: 1;
-      /* font-size: .75em; */
-      display: flex;
-      align-items: left;
-      align-content: center;
       text-align: left;
+      font-weight: bold;
+      display: block;
+      cursor: pointer;
+      margin: 0;
+      padding: 1em 3em 1em 1em;
+      position: relative;
   }
 
-   .summary-container {
-       /* height: 100px; */
-       width: 300px;
-   }
+summary::before {
+    position: absolute;
+    right: 1.5em;
+    transition: all 0.2s ease-out;
+  
+    /* Arrow Version */
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    content: "";
+    width: 8px;
+    height: 8px;
+    top: 1.4em;
+    transform: rotate(45deg) translate(-4px, -4px);
+}
+
+details[open] summary::before {
+    transform: rotate(225deg);
+}
 
   /* FOR DEV PURPOSES ONLY */
 /* body, *, *:after, *:before {
     background: none !important;
     background-color: rgba(0,0,0,.05) !important;
-    border: 1px solid rgba(0,0,0,.1) !important; */
-    /* color: rgba(0,0,0,0) !important;
+    border: 1px solid rgba(0,0,0,.1) !important;
+    color: rgba(0,0,0,0) !important;
   }
 
 img, svg, canvas, video {
