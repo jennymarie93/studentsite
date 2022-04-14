@@ -790,12 +790,56 @@ summary {
       line-height: 1;
       text-align: left;
       font-weight: bold;
-      display: block;
+      display: flex;
+      align-items: center;
       cursor: pointer;
       margin: 0;
-      padding: 1em 3em 1em 1em;
+      padding: 0 60px 0 60px;
       position: relative;
+      font-weight: 300;
+      /* background-size:3em; */
+      background-size: 40px 40px;
+      background-repeat: no-repeat;
+      min-height: 40px;
+      background-position: left center;
   }
+
+.icon1 {
+    background-image:url(../img/4x/1@4x.png);
+}
+
+.icon2 {
+    background-image:url(../img/4x/2@4x.png);
+}
+
+.icon3 {
+    background-image:url(../img/4x/3@4x.png);
+}
+
+.icon4 {
+    /* background-image:url(../img/TreeSelect.png); */
+    background-image:url(../img/4x/4@4x.png);
+}
+
+.icon5 {
+    background-image:url(../img/4x/5@4x.png);
+}
+
+.icon6 {
+    background-image:url(../img/4x/6@4x.png);
+}
+
+.icon7 {
+    background-image:url(../img/4x/7@4x.png);
+}
+
+.icon8 {
+    background-image:url(../img/4x/8@4x.png);
+}
+
+.icon9 {
+    background-image:url(../img/4x/9@4x.png);
+}
 
 summary img {
     display: inline-block;
