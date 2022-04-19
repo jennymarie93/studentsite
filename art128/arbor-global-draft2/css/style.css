@@ -730,14 +730,14 @@ details {
       /* border: 1px solid black; */
       text-align: center;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      height: 400px;
+      height: 340px;
   }
 
   .service-menu {
     list-style: none;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255);
     /* margin-left: 0; */
-    padding: 1em;
+    padding: 0 1em 1em 1em;
     text-align: center;
     /* display: flex; */
     align-items: center;
@@ -750,6 +750,8 @@ details {
      font-family: fairplex-wide, serif;
      font-weight: 400;
      font-style: normal;
+     padding: .75em 0 .1em 0;
+     margin: 0;
  }
 
 .dropdown {
@@ -849,18 +851,32 @@ summary img {
     width: clamp(3em,5vw,5vw); */
 }
 
+.team {
+    font-size: 1.65em;
+    margin: auto;
+    padding: 0;
+    text-align: left;
+    /* border: 1px solid red; */
+}
+
+summary.team::before {
+    width: 10px;
+    height: 10px;
+    top: .7em;
+    right: .5em;
+}
+
 summary::before {
     position: absolute;
     right: 1.5em;
     transition: all 0.2s ease-out;
-  
     /* Arrow Version */
-    border-right: 2px solid;
-    border-bottom: 2px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
     content: "";
     width: 8px;
     height: 8px;
-    top: 1.4em;
+    top: 1.2em;
     transform: rotate(45deg) translate(-4px, -4px);
 }
 
