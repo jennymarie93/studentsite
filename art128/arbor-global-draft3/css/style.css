@@ -239,9 +239,9 @@ html, body {
   }
   
 body {
-      background: linear-gradient(-45deg, #fffefe, #e7f5fc,  #bbe6f4, #b5ebf6,#8cd2e0, #657ad9, #394a97, #3f207e, #060606);
+      background: linear-gradient(-45deg, #fffefe,#fffefe, #fffefe, #e7f5fc,  #bbe6f4, #ca911f, #d57474, #5969b0, #323c67, #2c1854, #060606,  #060606);
       background-size: 400% 400%;
-      animation: gradient 15s ease infinite;
+      animation: gradient 20s ease infinite;
   }
   
   @keyframes gradient {
@@ -257,11 +257,12 @@ body {
   }
 
 .herobkgrd {
-    background-image: url(../img/4x/HERO@4x.png);
+    background-image: url(../img/trees-10.png);
     background-repeat: no-repeat;
     /* background-position: top center; */
     background-size: 100%;
     animation: trees 10s ease;
+    animation-direction: normal;
 }
 
 
@@ -275,6 +276,79 @@ body {
         width: 100%;
     }
 }
+
+/* Original pen: https://codepen.io/JacobStone420/pen/dyEvl/ */
+
+/* * {box-sizing: border-box;}
+html, body {height: 100%; margin: 0; }
+body {
+  background: #222;
+  display: grid;
+  place-items: center;
+} */
+
+.rotating-text {
+    font-family: fairplex-wide, serif;
+  font-size: 4vw;
+  line-height: 1.5;
+  color: #999;
+  text-align: center;
+}
+/* .rotating-text h1 {
+  margin: 0;
+  line-height: 1;
+  color: #fff;
+  font-size: 2em;
+} */
+
+.stationary-text p {
+    font-family: davis-sans, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 2vw;
+    color:rgba(223, 223, 223, 0.5);
+}
+
+.rotating-text .rotating-item-wrapper {
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  height: 1.5em;
+  top: .2em;
+  text-align: center;
+}
+.rotating-text .rotating-items{
+  display: inline-block;
+  color: #ffffff;
+  position: relative;
+  white-space: nowrap;
+  font-size: 1.75;  
+
+  /*animation*/
+  animation:move 10s;
+  /*animation-iteration-count*/
+  animation-iteration-count:infinite;
+  /*animation-delay*/
+  animation-delay:0;
+  
+  
+}
+
+@keyframes move {
+    0%  { top: 1.5em; opacity: 0;}
+    10%  { top: 0em; opacity: 1;}
+    20% { top: -1.5em; }
+    30% { top: -3em; }
+    40% { top: -4.5em; }
+    50% { top: -6em; }
+    60% { top: -7.5em; }
+    70% { top: -9em; }
+    80% { top: -10.5em; }
+    90% { top: -12em; opacity: 1;}
+    100% { top: -13.5em; opacity: 0; }
+}
+
+
 
 
 /* CONTAINER */
@@ -489,9 +563,9 @@ section {
 .hero {
     padding: 1em;
     text-align: center;
-    background-image: radial-gradient(rgba(255, 255, 255, 0.878),rgba(252, 251, 226, 0.99));
-    width: 50vw;
-    height: 50vw;
+    background-color: rgba(0, 0, 0, .5);
+    width: 45vw;
+    height: 45vw;
     margin: 2em auto 2em auto;
     border-radius: 50%;
     display: flex;
@@ -505,7 +579,8 @@ section {
     font-size: 5vw;
     font-size: clamp(1.5em,5vw,5vw);
     margin-bottom: 0;
-    color: rgb(79, 78, 78);
+    /* color: rgb(79, 78, 78); */
+    color: White;
     text-shadow:2px 2px rgba(0, 0, 0, .1) ;
     animation: fadeIn linear 2s;
 }
@@ -517,7 +592,8 @@ section {
     font-size: clamp(.5em,1.5vw,1.5vw);
     margin-left: 0;
     margin-right: 0;
-    color: rgb(94, 72, 72);
+    /* color: rgb(146, 146, 146); */
+    color: rgb(215, 215, 215);
     text-shadow:1px 1px rgba(0, 0, 0, .075) ;
     animation: fadeIn linear 4s;
 }
@@ -743,13 +819,17 @@ form input[type="submit"] {
 }
 
 #about {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255);
 }
 
 #services {
-    background-color: rgba(51, 51, 51, 0.9);
+    background-image: url(../img/TreePhotos-18-50.png);
+    background-color: rgba(50, 50, 50, .2);
     color: white;
-    text-decoration-color: rgb(255, 255, 255, .8);
+    text-decoration-color: rgb(255, 255, 255);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 details {
@@ -767,12 +847,17 @@ details {
 }
 
 #team {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255);
 }
 
 #contact {
-    background-color: rgba(51, 51, 51, 0.9);
+    background-image: url(../img/TreePhotos-18-50.png);
+    background-color: rgba(50, 50, 50, .2);
     color: white;
+    text-decoration-color: rgb(255, 255, 255);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
