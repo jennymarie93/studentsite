@@ -183,8 +183,8 @@ button,
 form input[type="submit"] {
     font-size: inherit;
     line-height: 1;
-    background-color: rgba(187, 164, 101);
-    border: 1px solid rgba(187, 164, 101);
+    background-color: rgb(55, 48, 29);
+    border: 1px solid rgb(55, 48, 29);
     color: rgba(255,255,255,1);
     padding: 1em;
     display: inline-block;
@@ -198,8 +198,8 @@ button:hover,
 form input[type="submit"]:hover {
     font-size: inherit;
     line-height: 1;
-    background-color:  rgb(161, 142, 87);
-    border-color: rgb(161, 142, 87);
+    background-color:  rgb(90, 86, 75);
+    border-color: rgb(90, 86, 75);
     color: rgba(255,255,255,1);
     text-decoration: none;
 }
@@ -239,7 +239,7 @@ html, body {
   }
   
 body {
-      background: linear-gradient(-45deg, #fffefe,#fffefe, #fffefe, #e7f5fc,  #bbe6f4, #ca911f, #d57474, #5969b0, #323c67, #2c1854, #060606,  #060606);
+      background: linear-gradient(-45deg, #fffefe,#fffefe, #fffefe, #e7f5fc,  #bbe6f4, #ba8f38, #ac6969, #5969b0, #323c67, #2c1854, #060606,  #060606);
       background-size: 400% 400%;
       animation: gradient 20s ease infinite;
   }
@@ -279,14 +279,6 @@ body {
 
 /* Original pen: https://codepen.io/JacobStone420/pen/dyEvl/ */
 
-/* * {box-sizing: border-box;}
-html, body {height: 100%; margin: 0; }
-body {
-  background: #222;
-  display: grid;
-  place-items: center;
-} */
-
 .rotating-text {
     font-family: fairplex-wide, serif;
   font-size: 4vw;
@@ -294,12 +286,6 @@ body {
   color: #999;
   text-align: center;
 }
-/* .rotating-text h1 {
-  margin: 0;
-  line-height: 1;
-  color: #fff;
-  font-size: 2em;
-} */
 
 .stationary-text p {
     font-family: davis-sans, Arial, Helvetica, sans-serif;
@@ -330,8 +316,6 @@ body {
   animation-iteration-count:infinite;
   /*animation-delay*/
   animation-delay:0;
-  
-  
 }
 
 @keyframes move {
@@ -347,8 +331,6 @@ body {
     90% { top: -12em; opacity: 1;}
     100% { top: -13.5em; opacity: 0; }
 }
-
-
 
 
 /* CONTAINER */
@@ -575,9 +557,9 @@ section {
 
 .hero h1  {
     letter-spacing: 5px;
-    font-size: 2.75em;
-    font-size: 5vw;
-    font-size: clamp(1.5em,5vw,5vw);
+    /* font-size: 2.75em; */
+    font-size: 4.5vw;
+    font-size: clamp(1em,4.5vw,4.5vw);
     margin-bottom: 0;
     /* color: rgb(79, 78, 78); */
     color: White;
@@ -792,6 +774,7 @@ form textarea {
 form input[type="submit"] {
     margin-top: 1.5em;
     width: auto;
+    text-align: center;
 }
 
 .site-id h1 .b {
@@ -857,7 +840,6 @@ details {
     text-decoration-color: rgb(255, 255, 255);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 
@@ -873,12 +855,6 @@ details {
   
   .site-header.sticky + .site-main {
     padding-top: 3em;
-  }
-
-  @media (min-height: 600px) {
-      #contact {
-          padding-bottom: 20em;
-      }
   }
 
   .services {
