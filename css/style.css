@@ -15,7 +15,7 @@ body {
     text-decoration: none;
     font-weight: 300;
     font-style: normal;
-    text-shadow: 1px 1px rgba(0,0,0,0.1);
+    /* text-shadow: 1px 1px rgba(0,0,0,0.1); */
 }
 
 h1 {
@@ -100,7 +100,6 @@ body {
     100% {
         background-position: 0% 50%;
     }
-}
 }
 
 main {
@@ -237,7 +236,7 @@ section {
 
 /* SIDEBAR/ASIDE */
 aside {
-    padding: 2em 0;
+    padding: 2em 2em 2em;
     color: white;
   }
   
@@ -247,6 +246,7 @@ aside {
         grid-template-columns: 20em auto;
         color: rgb(0, 0, 0);
         background-color: rgba(255, 255, 255, 0.2);
+        padding: 0 2em 0 2em;
     }
     .two-col-sidebar aside {
         border-right: 1px solid rgba(0, 0, 0, 0.1);
@@ -257,6 +257,20 @@ aside {
     }
 }
 
+.two-col-sidebar a {
+    color:#060606;
+}
+
+.two-col-sidebar li {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.two-col-sidebar ul {
+    text-transform: capitalize;
+    font-weight: 500;
+}
 /* SUB PAGES */
 .page-sub .hero {
     color: rgba(255, 255, 255, 0.8);
@@ -344,10 +358,10 @@ dd {
 
 @keyframes glow2 {
     from {
-        text-shadow: 0 0 5px #fff, 0 0 7px #fff, 0 0 10px #e1e1e1, 0 0 13px #e1e1e1, 0 0 16px #e1e1e1, 0 0 19px #e1e1e1, 0 0 21px #e1e1e1;
+        text-shadow: 0 0 5px #fff, 0 0 7px #fff, 0 0 10px #efefef, 0 0 13px #efefef, 0 0 16px #efefef, 0 0 19px #efefef, 0 0 21px #efefef;
       }
       to {
-        text-shadow: 0 0 5px #fff, 0 0 8px #c1c1bfcc, 0 0 14px #c1c1bfcc, 0 0 18px #c1c1bfcc, 0 0 22px #c1c1bfcc, 0 0 26px #c1c1bfcc, 0 0 28px #c1c1bfcc;
+        text-shadow: 0 0 5px #fff, 0 0 8px #f3f3f1cc, 0 0 14px #f3f3f1cc, 0 0 18px #f3f3f1cc, 0 0 22px #f3f3f1cc, 0 0 26px #f3f3f1cc, 0 0 28px #f3f3f1cc;
       }
 }
 
