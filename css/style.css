@@ -4,8 +4,8 @@ body { margin: 0; }
 
 /* GLOBAL COLORS */
 body {color: rgba(0,0,0,0.8);}
-a {color: rgb(255, 255, 255)}
-a:hover {color:rgb(181, 255, 255); }
+a {color: rgb(104, 104, 104)}
+a:hover {color:rgb(211, 125, 134); }
 
 /* GLOBAL TYPOGRAPHY */
 body {
@@ -24,6 +24,9 @@ h1 {
     font-style: normal;
 }
 
+a {
+    text-decoration: none;
+}
 
 /* SITE STRUCTURE */
 
@@ -79,9 +82,25 @@ header a:hover {
 
 /* MAIN */
 body {
-    background-image: url(../img/brick2.jpg);
+    
     background-position: top center;
     background-size: 100%;
+    background: linear-gradient(-45deg, #fffefe,#fffefe, #fffefe, #e7f5fc,  #bbe6f4, #ba8f38, #ac6969, #5969b0, #323c67, #2c1854, #060606,  #060606);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 }
 
 main {
@@ -95,12 +114,27 @@ section {
 
 /* HERO SECTION */
 .hero {
+    background-image: url(../img/transparent_leaf.png);
     background-color: rgba(141, 185, 185, 0) ;
     text-align: center;
     color: rgb(245, 239, 239);
     padding: 6em 1em;
-
+    /* animation-name: reveal;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-direction: normal; */
 }
+
+/* @keyframes reveal {
+    from {
+        transform: translate(-30px,0);
+          opacity: .5;
+    }
+    to {
+        transform: translate(0,0);
+        opacity: 1;
+    }
+} */
 
 .hero h2 {
     font-size: 6em;
@@ -140,13 +174,14 @@ section {
     padding: 6em 1em;
     display: grid;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .courses ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    text-decoration: dotted;
+    text-decoration: none;
     font-family: new-order, sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -154,14 +189,20 @@ section {
 }
 
 .courses h3 {
-    color: white;
-    font-family: epicursive, sans-serif;
-    font-size: 2.5em;
-    font-weight: 400;
+    color: rgb(68, 68, 68);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 2vw;
     font-style: normal;
     text-align: center;
-    animation: glow 3s ease-in-out infinite alternate;
 }
+
+.courses a {
+    text-decoration: none;
+}
+
+
 
 
 /* FOOTER */
@@ -175,12 +216,13 @@ footer {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
-    background: transparent;
+    background-color: rgba(0,0,0,0.6);
     animation: glow2 3s ease-out infinite alternate;
 }
 
 footer a {
     text-decoration: none;
+    color: white;
 }
 
 /* LAYOUT */
@@ -203,13 +245,15 @@ aside {
     .two-col-sidebar {
         display: grid;
         grid-template-columns: 20em auto;
-        color: white;
+        color: rgb(0, 0, 0);
+        background-color: rgba(255, 255, 255, 0.2);
     }
     .two-col-sidebar aside {
         border-right: 1px solid rgba(0, 0, 0, 0.1);
         margin: 0 3em 2em 0;
         padding: .3em 2em 0 0;
-        color: white;
+        color: rgb(0, 0, 0);
+        background-color: rgba(255, 255, 255, 0.2);
     }
 }
 
@@ -286,15 +330,16 @@ dd {
     justify-content: center;
     flex-wrap: wrap;
     list-style: none;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .coursework h3 {
-    font-family: epicursive, sans-serif;
-    font-size: 2.5em;
-    font-weight: 400;
+    color: rgb(68, 68, 68);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 1vw;
     font-style: normal;
-    color: rgb(255, 255, 255);
-    animation: glow2 3s ease-out infinite alternate;
 }
 
 @keyframes glow2 {
@@ -312,6 +357,7 @@ dd {
 
 .project ul {
     list-style-type: decimal;
+    line-height: 1.5;
 }
 
 /* CUSTOM STYLING FOR SPECIFIC PAGES */
@@ -323,7 +369,7 @@ dd {
 }
 
 .page-home .hero {
-background-image: url('../img/pinekitties.gif');
+background-color: #27e6e000;
 /* background-size:auto; */
 background-size: cover;
 background-repeat: no-repeat;
