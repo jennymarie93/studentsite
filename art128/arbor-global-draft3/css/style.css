@@ -240,7 +240,7 @@ html, body {
   
 body {
       background: linear-gradient(-45deg, #fffefe,#fffefe, #fffefe, #e7f5fc,  #bbe6f4, #ba8f38, #ac6969, #5969b0, #323c67, #2c1854, #060606,  #060606);
-      background-size: 400% 400%;
+      background-size: 900% 900%;
       animation: gradient 30s ease infinite;
   }
   
@@ -842,7 +842,7 @@ form input[type="submit"] {
       border: 1px solid rgba(187, 164, 101);
       color: rgba(255,255,255,1);
       padding: 1em;
-      display: flex;
+      display: block;
       margin: auto;
       text-align: center;
       border-radius: 0.5em;
@@ -850,8 +850,9 @@ form input[type="submit"] {
   }
 
   .about-section::before {
-      margin: 4px 1px 4px 1px;
-      color: rgb(255, 255, 255);
+      /* margin: 4px 1px 4px 1px;
+      color: rgb(255, 255, 255); */
+      display: none;
   }
 
   details[open] about-section::before {
@@ -1114,7 +1115,6 @@ details[open] summary::before {
     background-color: rgba(255, 255, 255, 0.99);
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
     width: 85%;
   }
 
@@ -1126,8 +1126,10 @@ details[open] summary::before {
 
   @media (min-width: 768px) {
     .modal-content {
-        width: 45%;
+        width: 100%;
+        height: 90%;
         padding: 50px;
+        color: red;
       }
 }
   
