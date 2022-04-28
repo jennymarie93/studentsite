@@ -257,7 +257,7 @@ body {
   }
 
 .herobkgrd {
-    background-image: url(../img/trees-10.png);
+    background-image: url(../img/trees-12.png);
     background-repeat: no-repeat;
     /* background-position: top center; */
     background-size: 100%;
@@ -736,7 +736,7 @@ article p:first-of-type {
 
 form {
     max-width: 600px;
-    margin: 2em auto;
+    margin: 1em auto;
 }
 
 form label,
@@ -771,6 +771,28 @@ form input[type="submit"] {
     margin-top: 1.5em;
     width: auto;
     text-align: center;
+}
+
+.mail {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.phone {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+@media (min-width: 768px) {
+    .mail {
+        margin-top: 6em;
+        padding-top: 1em;
+    }
+    
+    .phone {
+        margin-top: 3em;
+        padding-top: 1em;
+    }
 }
 
 .site-id h1 .b {
@@ -1071,6 +1093,58 @@ summary::before {
 details[open] summary::before {
     transform: rotate(225deg);
 }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: rgba(255, 255, 255, 0.99);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 85%;
+  }
+
+  .modal-content p {
+      text-align: left;
+      margin: 0 auto 1em auto;
+      /* padding-top: 1em; */
+  }
+
+  @media (min-width: 768px) {
+    .modal-content {
+        width: 45%;
+        padding: 50px;
+      }
+}
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
   /* FOR DEV PURPOSES ONLY */
 /* body, *, *:after, *:before {
