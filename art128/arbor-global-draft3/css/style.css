@@ -589,21 +589,6 @@ section {
     100% {opacity:1;}
   }
 
-.color {
-    animation: color 5s infinite linear;
-    animation-direction: alternate;
-    animation-delay: 5s;
-    animation-fill-mode: normal;
-  }
-
-@keyframes color {
-    from {
-        transform: rotateY(-10deg);
-    }
-    to {
-        transform: rotateY(-10deg); 
-    }
-  }
 
 /* TOGGLE NAV */
 
