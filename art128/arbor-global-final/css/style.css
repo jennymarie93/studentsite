@@ -342,12 +342,18 @@ body {
 
 @media (min-width: 768px) {
 /* TABLET-SIZED STYLING GOES HERE */
+.services {
+    height: 340px;
+    }   
 }
 
 @media (min-width: 1050px) {
     body {
         font-size: 100%; /* 16px */ 
       }
+    .services {
+        height: 340px;
+    }
 }
 
 @media (min-width: 1250px) {
@@ -356,6 +362,9 @@ body {
       }
     .container {
         max-width: 1200px;
+    }
+    .services {
+        height: 340px;
     }
 }
 
@@ -815,7 +824,7 @@ details p {
     color: rgba(0, 0, 0, .5);
     font-weight:200;
     line-height: 1.2;
-    font-size: 1vw;
+    /* font-size: 1vw; */
 }
 
 .service-menu details {
@@ -860,8 +869,11 @@ details p {
       /* border: 1px solid black; */
       text-align: center;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      height: 340px;
+      height: 320px;
+      width: 400px;
+      margin: 75px auto;
   }
+
 
   .service-menu {
     list-style: none;
