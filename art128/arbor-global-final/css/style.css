@@ -259,12 +259,10 @@ body {
 .herobkgrd {
     background-image: url(../img/trees-12.png);
     background-repeat: no-repeat;
-    /* background-position: top center; */
     background-size: 100%;
     animation: trees 2s ease;
     animation-direction: normal;
 }
-
 
 @keyframes trees {
     from {
@@ -276,19 +274,14 @@ body {
         width: 100%;
     }
 }
-
-
-
-
-
 /* Original pen: https://codepen.io/JacobStone420/pen/dyEvl/ */
 
 .rotating-text {
     font-family: fairplex-wide, serif;
-  font-size: 4vw;
-  line-height: 1.5;
-  color: #999;
-  text-align: center;
+    font-size: 4vw;
+    line-height: 1.5;
+    color: #999;
+    text-align: center;
 }
 
 .stationary-text p {
@@ -307,6 +300,7 @@ body {
   top: .2em;
   text-align: center;
 }
+
 .rotating-text .rotating-items{
   display: inline-block;
   color: #ffffff;
@@ -336,7 +330,6 @@ body {
     100% { top: -13.5em; opacity: 0; }
 }
 
-
 /* CONTAINER */
 
 .container {
@@ -363,58 +356,6 @@ body {
       }
     .container {
         max-width: 1200px;
-    }
-}
-
-/* FOR DEMO PURPOSES ONLY */
-body.demo { 
-    padding-top: 2em;
-}
-
-body.demo::before {
-    content: "Small Screen (Mobile): Less than 768px";
-    color: white;
-    background-color: #993333;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    text-align: center;
-    padding: .5em;
-}
-
-@media (min-width: 768px) {
-    body.demo::before {
-        content: "Midsize Screen (Tablet): 768px - 1050px";
-        color: white;
-        background-color: #bcb83d;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        text-align: center;
-    }
-}
-
-@media (min-width: 1050px) {
-    body.demo::before {
-        content: "Large Screen (Notebook): 1050px - 1250px";
-        color: white;
-        background-color: #693;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        text-align: center;
-    }
-}
-
-@media (min-width: 1250px) {
-    body.demo::before {
-        content: "Extra Large Screen (Desktop): 1250px +";
-        color: white;
-        background-color: #0099cc;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        text-align: center;
     }
 }
 
@@ -459,13 +400,6 @@ body.demo::before {
         margin-right: auto;
     }
 }
-
-/* FOR DEMO PURPOSES ONLY */
-/* .demo .column {
-    background: rgba(0, 0, 0, .2);
-    padding: 1em;
-    text-align: center;
-    } */
 
 /* SITE STRUCTURE */
 
@@ -801,7 +735,7 @@ form input[type="submit"] {
     display: block;
     width: 100px;
     margin: 0.35em auto;
-    border: .5px solid rgb(132, 108, 66)
+    border: .5px solid rgb(185, 185, 185)
 }
 
 #about {
@@ -934,7 +868,7 @@ details p {
     background-color: rgba(255, 255, 255);
     /* margin-left: 0; */
     padding: 0 1em 1em 1em;
-    text-align: center;
+    text-align: left;
     /* display: flex; */
     align-items: center;
     justify-content: space-around;
