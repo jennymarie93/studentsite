@@ -289,6 +289,18 @@ aside {
     margin: 2em;
 }
 
+.list-assignments li {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.list-assignments a {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.list-assignments a:hover {
+    color: rgba(0, 0, 0, 0.2);
+}
+
 /* CODE BLOCKS */
 
 pre code {
