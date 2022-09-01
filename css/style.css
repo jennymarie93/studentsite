@@ -302,15 +302,20 @@ aside {
 }
 
 .complete li {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.9);
+    font-family: new-order, Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    text-decoration: none;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .complete a {
-    color: rgba(0, 0, 0, 0.65);
+    color: rgba(0, 0, 0, 0.95);
 }
 
 .complete a:hover {
-    color: rgba(0, 0, 0, 0.9);
+    color: rgba(0, 0, 0, 0.99);
 }
 
 /* CODE BLOCKS */
