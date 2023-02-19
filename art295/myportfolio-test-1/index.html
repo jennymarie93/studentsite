@@ -16,8 +16,11 @@
 
     <!-- ADOBE FONTS -->
     <link rel="stylesheet" href="https://use.typekit.net/lgc4zsc.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
      
 </head>
+
 <body>
 
   <header class="site-header toggle-nav" data-navstate="closed">
@@ -38,64 +41,141 @@
     </div>
   </header>
 
+    
+
   <main class="site-main">
 
-    <div class="container">
-        <section class="hero">
-            <h1>This is the Hero Section</h1>
-            <p>Consectetur adipiscing elit. Morbi semper, nunc quis euismod porta, ligula dolor interdum dui, quis consectetur neque neque et urna. Consectetur adipiscing elit.</p>
-            <a href="#" class="button">CTA Button</a>
-            <a href="#" class="button alt">Alt CTA Button</a>
-        </section>
-    </div>
+    <div class="hero-cards"> 
 
-    <section>
-        <div class="container">
+        <div class="app">
 
-            <div class="row">
-                <div class="column one-third">
-                    <img src="img/placeholder-1x1.gif" alt="Placeholder Image Square 1x1" width="1500" height="1500">
-                    <h2>Heading 2</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur officiis exercitationem excepturi fugit quia doloribus totam aliquid libero, ratione laudantium?</p>
-                    <div class="button">Button</div>
+            <div class="cardList">
+                <button class="cardList__btn btn--left">
+                    <div class="icon">
+                        <svg>
+                            <use xlink:href="#arrow-left"></use>
+                        </svg>
+                    </div>
+                </button>
+        
+                <div class="cards__wrapper">
+                    <div class="card current--card">
+                        <div class="card__image">
+                            <img src="img/placeholder-1x1.gif" alt="" />
+                        </div>
+                    </div>
+        
+                    <div class="card next--card">
+                        <div class="card__image">
+                            <img src="img/placeholder-1x1.gif" alt="" />
+                        </div>
+                    </div>
+        
+                    <div class="card previous--card">
+                        <div class="card__image">
+                            <img src="img/placeholder-1x1.gif" alt="" />
+                        </div>
+                    </div>
                 </div>
-                <div class="column one-third">
-                    <img src="img/placeholder-1x1.gif" alt="Placeholder Image Square 1x1" width="1500" height="1500">
-                    <h2>Heading 2</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur officiis exercitationem excepturi fugit quia doloribus totam aliquid libero, ratione laudantium?</p>
-                    <div class="button">Button</div>
+        
+                <button class="cardList__btn btn--right">
+                    <div class="icon">
+                        <svg>
+                            <use xlink:href="#arrow-right"></use>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        
+            <div class="infoList">
+                <div class="info__wrapper">
+                    <div class="info current--info">
+                        <h1 class="text name">Highlands</h1>
+                        <h4 class="text location">Scotland</h4>
+                        <p class="text description">The mountains are calling</p>
+                    </div>
+        
+                    <div class="info next--info">
+                        <h1 class="text name">Machu Pichu</h1>
+                        <h4 class="text location">Peru</h4>
+                        <p class="text description">Adventure is never far away</p>
+                    </div>
+        
+                    <div class="info previous--info">
+                        <h1 class="text name">Chamonix</h1>
+                        <h4 class="text location">France</h4>
+                        <p class="text description">Let your dreams come true</p>
+                    </div>
                 </div>
-                <div class="column one-third">
-                    <img src="img/placeholder-1x1.gif" alt="Placeholder Image Square 1x1" width="1500" height="1500">
-                    <h2>Heading 2</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur officiis exercitationem excepturi fugit quia doloribus totam aliquid libero, ratione laudantium?</p>
-                    <div class="button">Button</div>
+            </div>
+        
+        
+            <div class="app__bg">
+                <div class="app__bg__image current--image">
+                    <img src="img/placeholder-1x1.gif" alt="" />
+                </div>
+                <div class="app__bg__image next--image">
+                    <img src="img/placeholder-1x1.gif" alt="" />
+                </div>
+                <div class="app__bg__image previous--image">
+                    <img src="img/placeholder-1x1.gif" alt="" />
                 </div>
             </div>
         </div>
 
-        <div class="container">
-
-            <form>
-    
-                <label for ="contact_name">Name:</label>
-                <input type="text" id="contact_name" name="contact_name" />
-    
-                <label for ="email">Email Address:</label>
-                <input type="text" id="contact_email" name="contact_email" />
-    
-                <label for ="contact_message">Message:</label>
-                <textarea id="contact_message" name="contact_message"></textarea>
-                
-                <input type="submit" value="Submit" />
-    
-            </form>
-    
+        <div class="loading__wrapper">
+            <div class="loader--text">Loading...</div>
+            <div class="loader">
+                <span></span>
+            </div>
         </div>
 
-    </section>
+        <svg class="icons" style="display: none;">
+            <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+                <polyline points='328 112 184 256 328 400'
+                            style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+            </symbol>
+            <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+                <polyline points='184 112 328 256 184 400'
+                            style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+            </symbol>
+        </svg>
 
-  </main>
+    </div>
+
+    <div class="container">
+
+            
+
+            <div class="projects">
+
+                <div class="row">
+                    <div class="column one-third">
+                        <img src="img/placeholder-1x1.gif" alt="Placeholder Image Square 1x1" width="1500" height="1500">
+                        <h2>Heading 2</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur officiis exercitationem excepturi fugit quia doloribus totam aliquid libero, ratione laudantium?</p>
+                        <div class="button">Button</div>
+                    </div>
+                    <div class="column one-third">
+                        <img src="img/placeholder-1x1.gif" alt="Placeholder Image Square 1x1" width="1500" height="1500">
+                        <h2>Heading 2</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur officiis exercitationem excepturi fugit quia doloribus totam aliquid libero, ratione laudantium?</p>
+                        <div class="button">Button</div>
+                    </div>
+                    <div class="column one-third">
+                        <img src="img/placeholder-1x1.gif" alt="Placeholder Image Square 1x1" width="1500" height="1500">
+                        <h2>Heading 2</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur officiis exercitationem excepturi fugit quia doloribus totam aliquid libero, ratione laudantium?</p>
+                        <div class="button">Button</div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
 
   <footer class="site-footer">
     <div class="container">
@@ -114,7 +194,15 @@
 
 
     <!-- MAIN JS FILE -->
-    <script src="js/script.js"></script>
+    <script src="./js/script.js"></script>
+
+    <!-- TEST JS FILE -->
+    <script src="./js/test.js"></script>
+
+    <!-- JS FROM WEB -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
 
 </body>
+
 </html>
