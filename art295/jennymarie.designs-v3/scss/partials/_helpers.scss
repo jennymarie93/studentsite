@@ -1,0 +1,93 @@
+/* HELPERS */
+
+.hide-visually {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.fade-in-text {
+    animation: fadeIn ease-in 1.25s;
+}
+
+@keyframes fadeIn {
+    from {opacity:0; transform: translateX(-100px);}
+    to {opacity:1;}
+}
+
+
+// ANIMATE ON SCROLL
+
+
+// .animate-on-scroll > * {
+//     transition: all 2s ease-out 1s;
+// }
+
+// .animate-on-scroll[data-sectionstate='active'] {
+//     opacity: 1;
+// }
+
+// .animate-on-scroll[data-sectionstate='inactive'] {
+//     opacity: 0;
+// }
+
+
+.animate-on-scroll.from-left {
+    transition: all 2s ease-out 1s;
+}
+
+.animate-on-scroll.from-left[data-sectionstate='active'] {
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+.animate-on-scroll.from-left[data-sectionstate='inactive'] {
+    transform: translate(-60px, 0);
+    opacity: 0;
+   
+}
+
+
+
+
+// .animate-on-scroll.from-left[data-sectionstate='active'] > *:nth-child(1) {
+//     transform: translate(0,0);
+//     opacity: 1;
+// }
+
+// .animate-on-scroll.from-left[data-sectionstate='inactive'] > *:nth-child(1) {
+//     transform: translate(-60px, 0);
+//     opacity: 0;
+   
+// }
+
+// .animate-on-scroll.from-left[data-sectionstate='active'] > *:nth-child(2) {
+//     border: 10px solid blue;
+// }
+
+
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 1000%;
+    }
+    100% {
+        background-size: 1000%;
+    }
+}
+
+

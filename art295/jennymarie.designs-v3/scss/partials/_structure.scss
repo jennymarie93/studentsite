@@ -1,0 +1,567 @@
+/* SITE STRUCTURE */
+
+
+
+/* SITE FOOTER */
+
+.site-footer {
+    position: static;
+    width: 100%;
+    z-index: 10;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    background-color: $accent-color-red;
+    background-image: linear-gradient(
+        45deg, $accent-color-red 16.666%, $accent-color-orange 16.666%, 
+        $accent-color-orange 33.333%,$accent-color-yellow 33.333%, 
+        $accent-color-yellow 50%, $accent-color-green 50%,  $accent-color-green 66.666%,$accent-color-blue 66.666%, 
+        $accent-color-blue 83.333%,
+        $accent-color-purple 83.333%);
+        background-size: 100%;
+        background-repeat: repeat;
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        li {
+            text-decoration: none;
+            list-style: none;
+            a {
+                color: white;
+                padding:10px;
+                margin: 1em;
+                font-family: $type-heading;
+                font-size: 200%;
+            }
+
+            a:hover {
+                color: black;
+            }
+        }
+    }
+}
+
+section {
+    display: block;
+    align-items: center;
+}
+
+.rounded-border {
+    border: 20px solid white, 5px solid black;
+    border-radius: 50px;
+    position: fixed relative;
+    bottom: 0;
+    right: auto;
+    left: auto;
+    height: auto;
+    max-width: 100%;
+    z-index: -1000; 
+    overflow: hidden;
+    video {
+        max-width: 100%;
+        height: auto;
+        border: 20px solid white, 5px solid black;
+        border-radius: 50px;
+    }     
+}
+
+/* HERO SECTION */
+
+.hero {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em auto .25em auto;
+    padding-top: 25%;
+
+    h1 {
+        font-weight: 500;
+        color: blue;
+        font-size: 4em;
+        line-height: .25;
+        @media (min-width: $breakpoint-small) {
+            color: green;
+            font-size: 4em;
+            > * {
+                flex-grow: 1;
+            }
+        }
+        @media (min-width: $breakpoint-medium) {
+            color: yellow;
+            font-size: 4em;
+            > * {
+                flex-grow: 1;
+            }
+        }
+        @media (min-width: $breakpoint-large) {
+            color: white;
+            font-size: 9em;
+            > * {
+                flex-grow: 1;
+            }
+        }
+    }     
+}
+
+
+
+.hawaii-bkg {
+    background-image: url(/img/general/hawaii-1.jpg);
+    overflow-x: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 150%;
+    width: 100%;
+    border: 20px solid white, 5px solid black;
+    border-radius: 50px;
+}
+
+#about-me {
+    h1 {
+        &.black{
+            font-size: 4em;
+        }
+        line-height: .95;
+        color: rgba(0, 0, 0, .9);
+        padding-bottom: 0;
+        margin-bottom: 0;
+        text-align: center;
+        &.sub {
+            font-family: $type-base;
+            font-size: 1em;
+            font-weight: 100;
+            margin: 0 auto;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-align: center;
+            line-height: 0;
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+    }
+
+    h2 {
+        font-size: 1.38em;
+        font-family: $type-subheading;
+        margin: 0 0 .15em 0;
+        text-transform: none;
+        letter-spacing: 0px;
+        color: $accent-color-red;
+        text-align: left;
+    }
+
+    p {
+        font {
+            font-family: $type-heading;
+            padding: 0;
+            line-height: 1.25;
+            font-size: 2.75em;
+            max-width: 100%;
+        }
+    }
+
+    h3 {
+        font-size: 2.75em;
+        color: black;
+        padding: 0;
+        margin: 0;
+    }
+
+    .about-me-photos {
+        max-height:100%;
+        width: auto;
+        overflow: clip;
+        margin-bottom: 0;
+        background-color: white;
+        border: 20px solid white, 5px solid black;
+        border-radius: 50px;
+        margin-top: 30em;
+        padding-bottom: 2em;
+        h1.rainbow {
+            font-size: 6em;
+            background-size: 50%;
+        }
+        .row {
+            border: 20px solid white, 5px solid black;
+            border-radius: 50px;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            h1 {
+                text-align: left;
+                font-size: 5em;
+                padding-top: 0;
+                margin-top: 92%;
+                background-size: 50%;
+                position: absolute;
+            }
+            h2 {
+                position: absolute;
+                margin-left: 1em;
+                margin-top: 98%;
+                font-size: 1.5em;
+                letter-spacing: 0;
+                text-transform: capitalize;
+                padding: 1.25em 0 1.5em 0;
+                font-family: $type-subheading;
+                font-weight:100;
+                margin-bottom: 0;
+                color: black;
+            }
+            &.contact {
+                summary{
+                    margin-left: 12.5em;
+                }
+                details {
+                    p{
+                        font-size: 1.25em;
+                        padding: 0 30px;
+                    }
+                }
+                
+            }
+        }
+        img {
+            max-height:100%;
+            width: auto;
+            overflow: clip;
+            border: 20px solid white, 5px solid black;
+            border-radius: 50px;
+            margin-bottom: 4em;
+        }
+        @media (min-width: $breakpoint-small) {
+            .row {
+                h1 {
+                    text-align: left;
+                    font-size: 4.5em;
+                    padding-top: 0;
+                    margin-top: 26%;
+                    position: absolute;
+                }
+                h2 {
+                    position: absolute;
+                    margin-top: 31%;
+                    font-size: 1.25em;
+                    letter-spacing: 0;
+                    color: black;
+                    text-transform: capitalize;
+                    padding: 1.25em 0 1.5em 0;
+                    font-family: $type-subheading;
+                    font-weight:100;
+                    margin-bottom: 0;
+                    max-width: 25%;
+                }
+                &.contact {
+                    summary{
+                        margin-left: 0;
+                    }
+                    details {
+                        p{
+                            font-size: 1.25em;
+                            padding: 0 30px;
+                        }
+                    }
+                }
+            }
+            img {
+                max-height:100%;
+                width: auto;
+                overflow: clip;
+                border: 20px solid white, 5px solid black;
+                border-radius: 50px;
+            }       
+        }
+        @media (min-width: $breakpoint-medium) {
+
+            .row {
+                margin-bottom: 0;
+                padding-bottom: 0;
+                h1 {
+                    text-align: left;
+                    font-size: 5em;
+                    padding-top: 0;
+                    margin-top: 28%;
+                    position: absolute;
+                }
+                h2 {
+                    position: absolute;
+                    margin-top: 32%;
+                    font-size: 1.5em;
+                    letter-spacing: 0;
+                    color: black;
+                    text-transform: capitalize;
+                    padding: 1.25em 0 1.5em 0;
+                    font-family: $type-subheading;
+                    font-weight:100;
+                    margin-bottom: 0;
+                }
+            }
+            img {
+                max-height:100%;
+                width: auto;
+                overflow: clip;
+                border: 20px solid white, 5px solid black;
+                border-radius: 50px;
+            }       
+        }
+        @media (min-width: $breakpoint-large) {
+            .row {
+                margin-bottom: 0;
+                padding-bottom: 0;
+                h1 {
+                    text-align: left;
+                    font-size: 5em;
+                    padding-top: 0;
+                    margin-top: 28%;
+                    position: absolute;
+                }
+                h2 {
+                    position: absolute;
+                    margin-top: 32%;
+                    font-size: 1.5em;
+                    letter-spacing: 0;
+                    color: black;
+                    text-transform: capitalize;
+                    padding: 1.25em 0 1.5em 0;
+                    font-family: $type-subheading;
+                    font-weight:100;
+                    margin-bottom: 0;
+                }
+            }
+            img {
+                max-height:100%;
+                width: auto;
+                overflow: clip;
+                border: 20px solid white, 5px solid black;
+                border-radius: 50px;
+            }       
+        }
+        > * {
+            flex-grow: 1;
+        }
+              
+    }
+}
+
+
+@media (min-width: $breakpoint-small) {
+   
+    > * {
+        flex-grow: 1;
+    }
+}
+@media (min-width: $breakpoint-medium) {
+   
+    > * {
+        flex-grow: 1;
+    }
+}
+@media (min-width: $breakpoint-large) {
+   
+    > * {
+        flex-grow: 1;
+    }
+}
+
+#lettering {
+    background-image: url(/img/general/lettering-1.jpg);
+    background-position: middle center fixed relative;
+    background-size: contain;
+}
+
+
+#design {
+    width: auto;
+    min-height: 100vh;
+    @media (min-width: $breakpoint-small) {
+   
+        > * {
+            flex-grow: 1;
+        }
+    }
+    @media (min-width: $breakpoint-medium) {
+       
+        > * {
+            flex-grow: 1;
+        }
+    }
+    @media (min-width: $breakpoint-large) {
+       
+        > * {
+            flex-grow: 1;
+        }
+    }
+}
+
+
+
+
+
+
+#branding {
+    background-image: url(/img/calm/calm-mask-3.png);
+    overflow-x: hidden;
+    background-size: 75vh;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-attachment: fixed;
+    height: auto;
+    width: 100%;
+    bottom: 0;
+    z-index: 20;
+
+    .row {
+        margin: 0;
+        z-index: 8;
+        &.calm {
+            background-image: url(/img/calm/calm-square.jpg);
+            overflow-x: hidden;
+            background-size: 200vh;
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            background-attachment: fixed;
+            min-height: 100vh;
+            min-width: 100%;
+            left: 0;
+            z-index: 20;
+        }
+
+        &.dark {
+           
+            background-color: rgba(0,0,0, .9);
+            img {
+                height: auto;
+                min-width: 100%;
+            }
+        }
+    }
+    @media (min-width: $breakpoint-small) {
+   
+        > * {
+            flex-grow: 1;
+        }
+    }
+    @media (min-width: $breakpoint-medium) {
+       
+        > * {
+            flex-grow: 1;
+        }
+    }
+    @media (min-width: $breakpoint-large) {
+       
+        > * {
+            flex-grow: 1;
+        }
+    }
+}
+
+
+
+section.left {
+    
+   .extra {
+        width: auto;
+        height: 100vh;
+        z-index: 1;
+        blockquote {
+            font-size: 3em;
+            margin: 0 0 1.5em 0;
+            line-height: 1;
+            max-width: 9em;
+            background-color: white;
+            border: 10px solid black;
+            border-left: 0;
+            padding: .5em .5em .5em 0!important; 
+        }
+        h1.title {
+            padding-top: 12%;
+            z-index: 1000;
+            color:black;
+            font-size: 6em;
+            line-height: .65;
+            margin: 0!important;
+        
+        }
+    }
+    
+    @media (min-width: $breakpoint-small) {
+   
+        > * {
+            flex-grow: 1;
+        }
+    }
+    @media (min-width: $breakpoint-medium) {
+       
+        > * {
+            flex-grow: 1;
+        }
+    }
+    @media (min-width: $breakpoint-large) {
+       
+        > * {
+            flex-grow: 1;
+        }
+    }
+    
+}
+
+section.right {
+    
+    .extra {
+         width: 100%;
+         height: 100vh;
+         z-index: 1;
+         text-align: right;
+         right: 0;
+         display: block;
+         blockquote {
+             font-size: 3em;
+             line-height: 1;
+             max-width: 9em;
+             background-color: white;
+             border: 10px solid black;
+             border-right: 0;
+             padding: .5em 0 .5em .5em!important;
+             right: 0;
+             margin-left: auto;
+             margin-inline-end: 0;
+             margin-top: 0;
+             
+         }
+         h1.title {
+             padding-top: 12%;
+             z-index: 1000;
+             color:black;
+             font-size: 6em;
+             line-height: .65;
+             margin: 0!important;
+         }
+        
+     }
+     
+     @media (min-width: $breakpoint-small) {
+    
+         > * {
+             flex-grow: 1;
+         }
+     }
+     @media (min-width: $breakpoint-medium) {
+        
+         > * {
+             flex-grow: 1;
+         }
+     }
+     @media (min-width: $breakpoint-large) {
+        
+         > * {
+             flex-grow: 1;
+         }
+     }
+     
+ }

@@ -1,0 +1,122 @@
+/* SEMANTIC GRID */
+
+$gridgap: 2%;
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    // margin-left: -($gridgap / 2);
+    // margin-right: -($gridgap / 2);
+    align-items: center;
+    margin-bottom: 3em;
+
+    > * {
+        margin: ($gridgap / 2);
+        flex-grow: 1;
+    }
+
+    &.centered { justify-content: center; }
+    &.swapped {flex-direction: row-reverse; }
+    &.stacked { flex-direction: column; }
+    &.align-top {align-items: flex-start; }
+  
+    
+    @media (min-width: $breakpoint-small) {
+
+        > * {
+            flex-grow: 0;
+        }
+
+        .one-whole { width: 100% - $gridgap; }
+        .four-fifths { width: 80% - $gridgap; }
+        .three-fourths { width: 75% - $gridgap; }
+        .two-thirds { width: 66.6666% - $gridgap; }
+        .three-fifths { width: 60% - $gridgap; }
+        .one-half { width: 50% - $gridgap; }
+        .two-fifths { width: 40% - $gridgap; }
+        .one-third { width: 33.3333% - $gridgap; }
+        .one-fourth { width: 25% - $gridgap; }
+        .one-fifth { width: 20% - $gridgap; }
+
+        .push-one-fourth { margin-left: 25% + ($gridgap / 2);}
+        .push-one-third { margin-left: 33.3333% + ($gridgap / 2);}
+        .push-one-half { margin-left: 50% + ($gridgap / 2);}
+        .push-three-fourths { margin-left: 75% + ($gridgap / 2);}
+
+        .centered {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    }
+
+    &.edgy { 
+        margin: 0;
+        align-items: stretch; 
+        
+        &.white { 
+            background-color: white;
+            border: 20px solid white, 5px solid black;
+            border-radius: 50px;
+            border-radius: 50px;
+            margin: 40% auto 10% auto !important; 
+            padding: 50px 15% 50px 15%  !important;
+            width: 100%; 
+        }
+
+        .auto-fit {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .text-column-right, 
+        .text-column-left {
+            
+           padding-left: 10%;
+           align-items: center;
+           height: 50% !important;
+           width: 50% !important;
+           object-fit: none;
+           margin: auto;
+
+            h3 {
+                font-size: 3em;
+                line-height: .5;
+                
+            }
+
+        }
+          
+        > * { 
+            margin: 0;
+        }
+
+        @media (min-width: $breakpoint-small) {
+            .one-half { width: 50%; }
+            .one-third { width: 33.3333%; }
+            &.white { 
+                width: 70%; 
+                margin: 0 auto;
+                h3 {
+                    font-size: 5em;
+                    line-height: .85;
+                    padding-bottom: .5em;
+                }
+            }
+
+            > * {
+                flex-grow: 1;
+            }
+        }
+        
+    }
+     
+}
+
+
+
+
+

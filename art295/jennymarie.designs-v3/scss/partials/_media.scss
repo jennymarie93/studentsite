@@ -1,0 +1,81 @@
+/* RESPONSIVE IMAGES */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* RESPONSIVE YOUTUBE VIDEO */
+
+iframe {
+    max-width: 100%;
+    max-height: 100vh;
+}
+
+#movie {
+    background-color: rgba(0, 0, 0,.85);
+    color: white !important;
+}
+
+/* VIDEO BACKGROUND */
+
+#myVideo {
+    position: fixed;
+    bottom: 0;
+    right: auto;
+    left: auto;
+    height: auto;
+    min-width: 100%;
+    z-index: -1000; 
+    overflow: hidden;
+    width: auto;
+    transform: translateX(-850px);
+    @media (min-width: $breakpoint-small) {
+        min-width: 100%;
+        transform: translateX(0px);
+        height: 100%;
+    }
+    @media (min-width: $breakpoint-medium) {
+        min-width: 100%;
+        transform: translateX(0px);
+        height: 100%;
+    }
+    @media (min-width: $breakpoint-large) {
+        min-width: 100%;
+        transform: translateX(0px);
+        height: 100%;
+    }
+}
+
+
+
+
+// #myVideo {
+//     position: fixed;
+//     bottom: 0;
+//     right: auto;
+//     left: auto;
+//     height: 100vh;
+//     z-index: -100; 
+//     overflow: hidden;
+//     width: auto;
+//     transform: translateX(-500px);
+//     @media (min-width: $breakpoint-small) {
+//         min-width: 100%;
+//        transform: translateX(-200px);
+//     }
+//     @media (min-width: $breakpoint-medium) {
+//         min-width: 100%;
+//         transform: translateX(-55px);
+//     }
+//     @media (min-width: $breakpoint-large) {
+//         min-width: 100%;
+//         transform: translateX(0px);
+//     }
+// }
+
+ 
+
+
+
+ 
